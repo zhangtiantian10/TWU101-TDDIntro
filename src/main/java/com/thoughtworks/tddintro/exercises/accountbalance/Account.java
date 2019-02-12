@@ -23,6 +23,9 @@ public class Account {
     }
 
     public int withdraw(int money) {
+        if (money > this.money) {
+            return this.money;
+        }
         this.money = this.money - money;
         return this.money;
     }
