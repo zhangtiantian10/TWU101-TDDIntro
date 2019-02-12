@@ -21,4 +21,9 @@ public class Account {
         this.money = this.money + money;
         return this.money;
     }
+
+    public int withdraw(int money) {
+        this.money = this.money - money;
+        return this.money;
+    }
 }
